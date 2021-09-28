@@ -16,11 +16,13 @@
             Enter the bill amount and cash given by the customer
             and know how minimum number of notes to retun.
         </p>
+        <form id="handle-form">
         <label for="bill-amount" class="input-label">Bill Amount:</label>
-        <input id="bill-amount" class="input" type="text" />
+        <input  id="bill-amount" class="input" type="number" min="0" required />
         <label for="cash-given" class="input-label">Cash Given:</label>
-        <input id="cash-given" class="input" type="text" />
+        <input id="cash-given" class="input" type="number" min="0" required/>
         <button id="check-button">Check</button>
+    </form>
         <p id="error-message"></p>
         <table class="change-table">
             <caption>
